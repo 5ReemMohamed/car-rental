@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!sidebarMenu || !sidebarOverlay) return;
     sidebarMenu.classList.add('active');
     sidebarOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('sidebar-open');
   }
 
   function closeSidebar() {
     if (!sidebarMenu || !sidebarOverlay) return;
     sidebarMenu.classList.remove('active');
     sidebarOverlay.classList.remove('active');
-    document.body.style.overflow = '';
+    document.body.classList.remove('sidebar-open');
   }
 
   menuToggle?.addEventListener('click', openSidebar);
@@ -201,13 +201,13 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
       rtl: true,
 
-      grabCursor: true,          
+      grabCursor: true,
       autoplay: {
-        delay: 3000,            
+        delay: 3000,
         disableOnInteraction: false,
       },
 
-      speed: 800,              
+      speed: 800,
 
       breakpoints: {
         0: { slidesPerView: 1 },
