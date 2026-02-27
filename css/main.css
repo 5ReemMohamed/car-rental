@@ -223,7 +223,7 @@ body.sidebar-open {
   }
 }
 .sidebar-menu {
-  right: -400px;
+  right: -700px;
   transform: none;
   transition: right 0.4s ease;
 }
@@ -1134,7 +1134,7 @@ input[type="number"] {
   bottom: -200px;
   left: 60%;
   transform: translateX(-50%);
-  width: 450px;
+  width: 550px;
 }
 
 @media screen and (max-width:768px) {
@@ -1406,9 +1406,9 @@ input[type="number"] {
 .car-img-faq {
   position: absolute;
   z-index: 2;
-  max-width: 500px;
+  max-width: 600px;
   top: 55%;
-  right: 8%;
+  right: 7%;
 }
 
 @media screen and (max-width:992px) {
@@ -2675,4 +2675,29 @@ textarea.form-control {
 
 .interest-btn:hover {
   background: #88196e;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
 }
