@@ -27,7 +27,9 @@
                             <span></span>
                             <span></span>
                         </div>
-                        <span class="menu-text">Menu</span>
+                        <span class="menu-text" data-ar="القائمة" data-en="Menu">
+                            القائمة
+                        </span>
                     </button>
                 </div>
                 <div class="header-center">
@@ -46,7 +48,9 @@
                             <path
                                 d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12z" />
                         </svg>
-                        <span> إدارة الحجوزات</span>
+                        <span data-ar="إدارة الحجوزات" data-en="Booking Management">
+                            إدارة الحجوزات
+                        </span>
                     </a>
                     <a class="btn-login text-decoration-none" href="login.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -54,11 +58,13 @@
                             <path
                                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                         </svg>
-                        <span> تسجيل دخول</span>
+                        <span data-ar="تسجيل دخول" data-en="Login">
+                            تسجيل دخول
+                        </span>
                     </a>
-                    <button class="btn-lang">
-                        <img src="https://flagcdn.com/w40/sa.png" alt="Saudi Flag" width="20">
-                        <span>العربية</span>
+                    <button class="btn-lang" id="langToggle">
+                        <img src="https://flagcdn.com/w40/us.png" id="langFlag" width="20">
+                        <span data-ar="English" data-en="العربية">English</span>
                     </button>
                 </div>
             </div>
@@ -79,7 +85,9 @@
                     <path
                         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                 </svg>
-                <span>تسجيل دخول</span>
+                <span data-ar="تسجيل دخول" data-en="Login">
+                    تسجيل دخول
+                </span>
             </a>
 
             <a href="index.html" class="nav-item">
@@ -87,7 +95,9 @@
                     <path
                         d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
                 </svg>
-                <span>الصفحة الرئيسية</span>
+                <span data-ar="الصفحة الرئيسية" data-en="Home">
+                    الصفحة الرئيسية
+                </span>
             </a>
 
             <a href="car-booking.html" class="nav-item">
@@ -95,8 +105,11 @@
                     <path
                         d="M0 3.5A.5.5 0 0 1 .5 3H1c.325 0 .617.097.85.268C2.08 3.097 2.372 3 2.697 3H15a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.5c-.18 0-.356-.021-.518-.06l-1.96.392A.5.5 0 0 1 11 12h-.5a3.5 3.5 0 1 1-7 0H.5a.5.5 0 0 1-.5-.5v-8zm3 9a2.5 2.5 0 0 0 5 0H3z" />
                 </svg>
-                <span>إحجز السيارة</span>
+                <span data-ar="إحجز السيارة" data-en="Book a Car">
+                    إحجز السيارة
+                </span>
             </a>
+
 
 
             <a href="fleet.html" class="nav-item">
@@ -104,15 +117,20 @@
                     <path
                         d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
                 </svg>
-                <span>أسطول المها</span>
+                <span data-ar="أسطول المها" data-en="Al Maha Fleet">
+                    أسطول المها
+                </span>
             </a>
 
             <a href="our-locations.html" class="nav-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                 </svg>
-                <span>مواقع الفروع</span>
+                <span data-ar="مواقع الفروع" data-en="Branches Locations">
+                    مواقع الفروع
+                </span>
             </a>
+
 
 
             <a href="services.html" class="nav-item">
@@ -122,7 +140,9 @@
                     <path
                         d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319z" />
                 </svg>
-                <span>الخدمات</span>
+                <span data-ar="الخدمات" data-en="Services">
+                    الخدمات
+                </span>
             </a>
 
             <a href="offers.html" class="nav-item">
@@ -132,7 +152,9 @@
                     <path
                         d="M5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0-2a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1zM1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13z" />
                 </svg>
-                <span>العروض</span>
+                <span data-ar="العروض" data-en="Offers">
+                    العروض
+                </span>
             </a>
 
             <a href="jobs.html" class="nav-item">
@@ -142,7 +164,9 @@
                         d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
                 </svg>
-                <span>وظائف</span>
+                <span data-ar="وظائف" data-en="Careers">
+                    وظائف
+                </span>
             </a>
 
             <a href="about-us.html" class="nav-item">
@@ -151,7 +175,9 @@
                     <path
                         d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                 </svg>
-                <span>معلومات عنا</span>
+                <span data-ar="معلومات عنا" data-en="About Us">
+                    معلومات عنا
+                </span>
             </a>
 
             <a href="contact-us.html" class="nav-item">
@@ -159,7 +185,9 @@
                     <path
                         d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                 </svg>
-                <span>إتصل بنا</span>
+                <span data-ar="إتصل بنا" data-en="Contact Us">
+                    إتصل بنا
+                </span>
             </a>
 
             <a href="faq.html" class="nav-item">
@@ -167,193 +195,259 @@
                     <path
                         d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
                 </svg>
-                <span>الأسئلة الأكثر شيوعاً</span>
+                <span data-ar="الأسئلة الأكثر شيوعاً" data-en="Frequently Asked Questions">
+                    الأسئلة الأكثر شيوعاً
+
             </a>
         </nav>
     </div>
     <main>
         <section class="services-header">
             <div class="container pt-5">
-                <h2>احجز سيارة</h2>
+
+                <h2 data-ar="احجز سيارة" data-en="Book a Car">
+                    احجز سيارة
+                </h2>
+
                 <div class="fw-semibold">
-                    <a href="index.html">الرئيسية</a>
+
+                    <a href="index.html" data-ar="الرئيسية" data-en="Home">
+                        الرئيسية
+                    </a>
+
                     <span>/</span>
-                    <span>احجز سيارة</span>
+
+                    <span data-ar="احجز سيارة" data-en="Book a Car">
+                        احجز سيارة
+                    </span>
+
                 </div>
+
             </div>
         </section>
         <section class="booking">
             <div class="booking-container py-3">
                 <div class="container-fluid">
-                    <div class="row g-4">
+                    <div class="row g-4 ">
                         <div class="col-lg-6 justify-content-start">
                             <div class="booking-content">
                                 <div class="tab-buttons">
-                                    <button class="tab-btn active" data-tab="daily">يومي</button>
-                                    <button class="tab-btn" data-tab="weekly">اسبوعي</button>
-                                    <button class="tab-btn" data-tab="monthly">فليكس ( للتأجير الشهري )</button>
+                                    <button class="tab-btn active" data-tab="daily" data-ar="يومي" data-en="Daily">
+                                        يومي
+                                    </button>
+                                    <button class="tab-btn" data-tab="weekly" data-ar="اسبوعي" data-en="Weekly">
+                                        اسبوعي
+                                    </button>
+                                    <button class="tab-btn" data-tab="monthly" data-ar="فليكس ( للتأجير الشهري )"
+                                        data-en="Flex (Monthly Rental)">
+                                        فليكس ( للتأجير الشهري )
+                                    </button>
                                 </div>
                                 <form class="booking-form">
                                     <div class="row g-4 daily-reserve">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>موقع الاستلام</label>
+                                                <label data-ar="موقع الاستلام" data-en="Pickup Location">موقع
+                                                    الاستلام</label>
                                                 <div class="input-wrapper location-wrapper">
                                                     <i class="fas fa-map-marker-alt"></i>
                                                     <input type="text" class="form-control location-input"
-                                                        id="pickupLocation" placeholder="اختر فرع الاستلام">
+                                                        id="pickupLocation" placeholder="اختر فرع الاستلام"
+                                                        data-ar-placeholder="اختر فرع الاستلام"
+                                                        data-en-placeholder="Select Pickup Branch">
                                                     <div class="mega-location-dropdown">
                                                         <div class="mega-container">
                                                             <div class="mega-categories">
-                                                                <div class="mega-category active" data-type="airports">
+                                                                <div class="mega-category active" data-type="airports"
+                                                                    data-ar="المطارات" data-en="Airports">
                                                                     المطارات
                                                                 </div>
-                                                                <div class="mega-category" data-type="branches">جميع
-                                                                    الفروع
+                                                                <div class="mega-category" data-type="branches"
+                                                                    data-ar="جميع الفروع" data-en="All Branches">
+                                                                    جميع الفروع
                                                                 </div>
                                                             </div>
                                                             <div class="mega-branches">
                                                                 <div class="mega-branch-item" data-name="مطار أبها"
                                                                     data-hours="24 ساعة"
-                                                                    data-location="مطار أبها - صالة الوصول">
+                                                                    data-location="مطار أبها - صالة الوصول"
+                                                                    data-ar="مطار أبها" data-en="Abha Airport">
                                                                     مطار أبها
                                                                 </div>
-
                                                                 <div class="mega-branch-item" data-name="مطار الأحساء"
                                                                     data-hours="6 ص - 12 م"
-                                                                    data-location="مطار الأحساء - البوابة الرئيسية">
+                                                                    data-location="مطار الأحساء - البوابة الرئيسية"
+                                                                    data-ar="مطار الأحساء" data-en="Al Ahsa Airport">
                                                                     مطار الأحساء
                                                                 </div>
-
                                                                 <div class="mega-branch-item" data-name="الفرع الرئيسي"
                                                                     data-hours="8 ص - 11 م"
-                                                                    data-location="شارع الملك فهد">
+                                                                    data-location="شارع الملك فهد"
+                                                                    data-ar="الفرع الرئيسي" data-en="Main Branch">
                                                                     الفرع الرئيسي
                                                                 </div>
-
                                                             </div>
                                                             <div class="mega-info">
-                                                                <h6>توقيت الفرع</h6>
-                                                                <p id="branchHours">اختر فرع لعرض التفاصيل</p>
+                                                                <h6 data-ar="توقيت الفرع" data-en="Branch Hours">توقيت
+                                                                    الفرع
+                                                                </h6>
+                                                                <p id="branchHours" data-ar="اختر فرع لعرض التفاصيل"
+                                                                    data-en="Select a branch to view details">
+                                                                    اختر فرع لعرض التفاصيل
+                                                                </p>
 
-                                                                <h6>موقع الفرع</h6>
-                                                                <p id="branchLocation">---</p>
+                                                                <h6 data-ar="موقع الفرع" data-en="Branch Location">موقع
+                                                                    الفرع</h6>
+                                                                <p id="branchLocation" data-ar="---" data-en="---">---
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group drop-off-group">
-                                                <label>موقع التسليم</label>
+                                                <label data-ar="موقع التسليم" data-en="Drop-off Location">موقع
+                                                    التسليم</label>
                                                 <div class="input-wrapper location-wrapper">
                                                     <i class="fas fa-map-marker-alt"></i>
                                                     <input type="text" class="form-control location-input"
-                                                        id="dropoffLocation" placeholder="اختر فرع التوصيل">
+                                                        id="dropoffLocation" placeholder="اختر فرع التوصيل"
+                                                        data-ar-placeholder="اختر فرع التوصيل"
+                                                        data-en-placeholder="Select Drop-off Branch">
                                                     <div class="mega-location-dropdown">
                                                         <div class="mega-container">
                                                             <div class="mega-categories">
-                                                                <div class="mega-category active" data-type="airports">
+                                                                <div class="mega-category active" data-type="airports"
+                                                                    data-ar="المطارات" data-en="Airports">
                                                                     المطارات
                                                                 </div>
-                                                                <div class="mega-category" data-type="branches">جميع
-                                                                    الفروع
+                                                                <div class="mega-category" data-type="branches"
+                                                                    data-ar="جميع الفروع" data-en="All Branches">
+                                                                    جميع الفروع
                                                                 </div>
                                                             </div>
                                                             <div class="mega-branches">
                                                                 <div class="mega-branch-item" data-name="مطار أبها"
                                                                     data-hours="24 ساعة"
-                                                                    data-location="مطار أبها - صالة الوصول">
+                                                                    data-location="مطار أبها - صالة الوصول"
+                                                                    data-ar="مطار أبها" data-en="Abha Airport">
                                                                     مطار أبها
                                                                 </div>
-
                                                                 <div class="mega-branch-item" data-name="مطار الأحساء"
                                                                     data-hours="6 ص - 12 م"
-                                                                    data-location="مطار الأحساء - البوابة الرئيسية">
+                                                                    data-location="مطار الأحساء - البوابة الرئيسية"
+                                                                    data-ar="مطار الأحساء" data-en="Al Ahsa Airport">
                                                                     مطار الأحساء
                                                                 </div>
-
                                                                 <div class="mega-branch-item" data-name="الفرع الرئيسي"
                                                                     data-hours="8 ص - 11 م"
-                                                                    data-location="شارع الملك فهد">
+                                                                    data-location="شارع الملك فهد"
+                                                                    data-ar="الفرع الرئيسي" data-en="Main Branch">
                                                                     الفرع الرئيسي
                                                                 </div>
-
                                                             </div>
                                                             <div class="mega-info">
-                                                                <h6>توقيت الفرع</h6>
-                                                                <p id="branchHours">اختر فرع لعرض التفاصيل</p>
+                                                                <h6 data-ar="توقيت الفرع" data-en="Branch Hours">توقيت
+                                                                    الفرع
+                                                                </h6>
+                                                                <p id="branchHours" data-ar="اختر فرع لعرض التفاصيل"
+                                                                    data-en="Select a branch to view details">
+                                                                    اختر فرع لعرض التفاصيل
+                                                                </p>
 
-                                                                <h6>موقع الفرع</h6>
-                                                                <p id="branchLocation">---</p>
+                                                                <h6 data-ar="موقع الفرع" data-en="Branch Location">موقع
+                                                                    الفرع</h6>
+                                                                <p id="branchLocation" data-ar="---" data-en="---">---
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>تاريخ الاستلام</label>
+                                                <label data-ar="تاريخ الاستلام" data-en="Pickup Date">تاريخ
+                                                    الاستلام</label>
                                                 <div class="input-wrapper">
                                                     <i class="fas fa-calendar"></i>
                                                     <input type="text" class="form-control date-picker" id="pickup-date"
-                                                        placeholder="00/00/0000">
+                                                        placeholder="00/00/0000" data-ar-placeholder="00/00/0000"
+                                                        data-en-placeholder="00/00/0000">
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>وقت الاستلام</label>
+                                                <label data-ar="وقت الاستلام" data-en="Pickup Time">وقت الاستلام</label>
                                                 <div class="input-wrapper">
                                                     <i class="fas fa-clock"></i>
-                                                    <input type="text" class="form-control" placeholder="00:00">
+                                                    <input type="text" class="form-control" placeholder="00:00"
+                                                        data-ar-placeholder="00:00" data-en-placeholder="00:00">
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>تاريخ التسليم</label>
+                                                <label data-ar="تاريخ التسليم" data-en="Return Date">تاريخ
+                                                    التسليم</label>
                                                 <div class="input-wrapper">
                                                     <i class="fas fa-calendar"></i>
                                                     <input type="text" class="form-control date-picker" id="return-date"
-                                                        placeholder="00/00/0000">
+                                                        placeholder="00/00/0000" data-ar-placeholder="00/00/0000"
+                                                        data-en-placeholder="00/00/0000">
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group duration-group">
-                                                <label>وقت التسليم</label>
+                                                <label data-ar="وقت التسليم" data-en="Return Time">وقت التسليم</label>
                                                 <div class="input-wrapper">
                                                     <i class="fas fa-clock"></i>
-                                                    <input type="text" class="form-control" placeholder="00:00">
+                                                    <input type="text" class="form-control" placeholder="00:00"
+                                                        data-ar-placeholder="00:00" data-en-placeholder="00:00">
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
                                             <div class="form-group month-reserve" style="display: none;">
-                                                <label>المده</label>
+                                                <label data-ar="المده" data-en="Duration">المده</label>
                                                 <div class="input-wrapper">
                                                     <i class="fas fa-clock"></i>
-                                                    <input type="text" class="form-control" placeholder="شهر مايو">
+                                                    <input type="text" class="form-control" placeholder="شهر مايو"
+                                                        data-ar-placeholder="شهر مايو" data-en-placeholder="May Month">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn-next">بحث</button>
+
+                                    <a href="#" type="submit" class="btn-next text-decoration-none text-center"
+                                        data-ar="بحث" data-en="Search">
+                                        بحث
+                                    </a>
                                 </form>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="row g-4 pt-5 justify-content-center">
+                            <div class="row g-4 p-3 justify-content-center">
                                 <div class="d-flex gap-3 align-items-center mb-4 justify-content-center">
                                     <div class="d-flex align-items-center justify-content-center gap-1 ">
                                         <span class="block w-20 h-px bg-primary"></span>
                                         <span class="block h-20 w-px bg-primary"></span>
                                         <span class="block h-30 w-px bg-primary"></span>
                                     </div>
-                                    <h2>استئجار سيارة في ثلاث خطوات بسيطة</h2>
+                                    <h2 data-ar="استئجار سيارة في ثلاث خطوات بسيطة"
+                                        data-en="Rent a Car in 3 Simple Steps">
+                                        استئجار سيارة في ثلاث خطوات بسيطة
+                                    </h2>
                                     <div class="d-flex gap-2 align-items-center">
                                         <div class="d-flex align-items-center justify-content-center gap-1 ">
                                             <span class="block h-30 w-px bg-primary"></span>
@@ -367,9 +461,17 @@
                                         <div class="icon">
                                             <i class="fa-solid fa-car-side"></i>
                                         </div>
-                                        <h3> <span class="text-purple">01.</span> اختر سيارتك واحجز</h3>
-                                        <p class="text-muted fw-semibold">حدد التواريخ ومكان الاستلام، واستعرض تشكيلتنا
-                                            المتنوعة من السيارات.</p>
+                                        <h3>
+                                            <span class="text-purple">01.</span>
+                                            <span data-ar="اختر سيارتك واحجز" data-en="Choose Your Car and Book">
+                                                اختر سيارتك واحجز
+                                            </span>
+                                        </h3>
+                                        <p class="text-muted fw-semibold"
+                                            data-ar="حدد التواريخ ومكان الاستلام، واستعرض تشكيلتنا المتنوعة من السيارات."
+                                            data-en="Select your dates and pickup location, and browse our diverse car collection.">
+                                            حدد التواريخ ومكان الاستلام، واستعرض تشكيلتنا المتنوعة من السيارات.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -377,10 +479,17 @@
                                         <div class="icon">
                                             <i class="fa-solid fa-credit-card"></i>
                                         </div>
-                                        <h3><span class="text-purple">02.</span> تأكيد الحجز والدفع</h3>
-                                        <p class="text-muted fw-semibold">قم بإتمام حجزك بسهولة وأمان عبر الإنترنت مع
-                                            تسعير
-                                            شفاف يشمل جميع التكاليف.</p>
+                                        <h3>
+                                            <span class="text-purple">02.</span>
+                                            <span data-ar="تأكيد الحجز والدفع" data-en="Confirm Booking & Payment">
+                                                تأكيد الحجز والدفع
+                                            </span>
+                                        </h3>
+                                        <p class="text-muted fw-semibold"
+                                            data-ar="قم بإتمام حجزك بسهولة وأمان عبر الإنترنت مع تسعير شفاف يشمل جميع التكاليف."
+                                            data-en="Complete your booking easily and securely online with transparent pricing covering all costs.">
+                                            قم بإتمام حجزك بسهولة وأمان عبر الإنترنت مع تسعير شفاف يشمل جميع التكاليف.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
@@ -388,10 +497,17 @@
                                         <div class="icon">
                                             <i class="fa-solid fa-map-location-dot"></i>
                                         </div>
-                                        <h3> <span class="text-purple">03.</span> استلام السيارة والانطلاق</h3>
-                                        <p class="text-muted fw-semibold">قدّم رخصة القيادة وتأكيد الحجز في مكتبنا، ثم
-                                            انطلق
-                                            بثقة نحو وجهتك.</p>
+                                        <h3>
+                                            <span class="text-purple">03.</span>
+                                            <span data-ar="استلام السيارة والانطلاق" data-en="Pick Up the Car & Go">
+                                                استلام السيارة والانطلاق
+                                            </span>
+                                        </h3>
+                                        <p class="text-muted fw-semibold"
+                                            data-ar="قدّم رخصة القيادة وتأكيد الحجز في مكتبنا، ثم انطلق بثقة نحو وجهتك."
+                                            data-en="Present your driving license and booking confirmation at our office, then confidently head to your destination.">
+                                            قدّم رخصة القيادة وتأكيد الحجز في مكتبنا، ثم انطلق بثقة نحو وجهتك.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -402,29 +518,52 @@
         </section>
 
         <section id="carsSection" class="cars-section d-none">
-            <h2 class="text-center mb-5 text-white">السيارات المتاحة</h2>
+            <h2 class="text-center mb-5 text-white" data-ar="السيارات المتاحة" data-en="Available Cars">
+                السيارات المتاحة
+            </h2>
             <div class="container mb-5">
                 <div class="row g-3 align-items-center">
                     <div class="col-md-3">
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="availableOnly">
-                            <label class="form-check-label fw-bold text-white">
+                            <label class="form-check-label fw-bold text-white" data-ar="إظهار السيارات المتوفرة فقط؟"
+                                data-en="Show Available Cars Only?">
                                 إظهار السيارات المتوفرة فقط؟
                             </label>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <select id="priceSort" class="form-select shadow-sm">
-                            <option value="">ترتيب بالسعر</option>
-                            <option value="low">من الأرخص للأغلى</option>
-                            <option value="high">من الأغلى للأرخص</option>
+
+                            <option value="" data-ar="ترتيب بالسعر" data-en="Sort by Price">
+                                ترتيب بالسعر
+                            </option>
+
+                            <option value="low" data-ar="من الأرخص للأغلى" data-en="Low to High">
+                                من الأرخص للأغلى
+                            </option>
+
+                            <option value="high" data-ar="من الأغلى للأرخص" data-en="High to Low">
+                                من الأغلى للأرخص
+                            </option>
+
                         </select>
                     </div>
                     <div class="col-md-4">
                         <select id="categoryFilter" class="form-select shadow-sm">
-                            <option value="all">الكل</option>
-                            <option value="economy">اقتصادية</option>
-                            <option value="luxury">فخمة</option>
+
+                            <option value="all" data-ar="الكل" data-en="All">
+                                الكل
+                            </option>
+
+                            <option value="economy" data-ar="اقتصادية" data-en="Economy">
+                                اقتصادية
+                            </option>
+
+                            <option value="luxury" data-ar="فخمة" data-en="Luxury">
+                                فخمة
+                            </option>
+
                         </select>
                     </div>
 
@@ -436,164 +575,270 @@
 
                     <div class="col-lg-4 col-md-6" data-category="economy" data-price="121" data-available="true">
                         <div class="nova-card">
+
                             <div class="nova-img">
                                 <img src="images/car-1.jpg" alt="car">
                             </div>
-                            <div class="special-offer-badge">
+
+                            <div class="special-offer-badge" data-ar="عرض استقبال نقاط الولاء"
+                                data-en="Loyalty Points Welcome Offer">
                                 <i class="fas fa-gift"></i>
                                 عرض استقبال نقاط الولاء
                             </div>
+
                             <div class="nova-content">
-                                <span class="nova-badge">صغيرة</span>
-                                <h5 class="nova-title mb-5">شفروليه ماليبو أو ما شابه</h5>
+
+                                <span class="nova-badge" data-ar="صغيرة" data-en="Small">
+                                    صغيرة
+                                </span>
+
+                                <h5 class="nova-title mb-5" data-ar="شفروليه ماليبو أو ما شابه"
+                                    data-en="Chevrolet Malibu or Similar">
+                                    شفروليه ماليبو أو ما شابه
+                                </h5>
+
                                 <div
                                     class="features d-flex justify-content-between align-items-center text-center my-3">
                                     <div>
                                         <img src="images/icon-1.png" alt="">
-                                        <p class="mt-2 text-purple">4</p>
+                                        <p class="mt-2 text-purple" data-ar="4" data-en="4">
+                                            4
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="https://demo.awaikenthemes.com/novaride/dark/wp-content/uploads/2024/09/icon-door-1.svg"
                                             alt="">
-                                        <p class="mt-2 text-purple">4</p>
+                                        <p class="mt-2 text-purple" data-ar="4" data-en="4">
+                                            4
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="images/icon-2.png" alt="">
-                                        <p class="mt-2 text-purple">2</p>
+                                        <p class="mt-2 text-purple" data-ar="2" data-en="2">
+                                            2
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="images/icon-3.png" alt="">
-                                        <p class="mt-2 text-purple">اتوماتيك</p>
+                                        <p class="mt-2 text-purple" data-ar="اتوماتيك" data-en="Automatic">
+                                            اتوماتيك
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="pricing-section">
+
                                     <div class="daily-price">
-                                        <span class="price-label">الإيجار اليومي</span>
+                                        <span class="price-label" data-ar="الإيجار اليومي" data-en="Daily Rental">
+                                            الإيجار اليومي
+                                        </span>
                                         <div class="price-amount">176.18</div>
-                                        <span class="tax-note">* يشمل الفريضة</span>
+                                        <span class="tax-note" data-ar="* يشمل الفريضة" data-en="* Includes Tax">
+                                            * يشمل الفريضة
+                                        </span>
                                     </div>
+
                                     <div class="weekly-price">
-                                        <span class="weekly-label">الإيجار اليومي</span>
+                                        <span class="weekly-label" data-ar="الإيجار اليومي" data-en="Daily Rental">
+                                            الإيجار اليومي
+                                        </span>
                                         <div class="original-price">207.27</div>
-                                        <div class="discount-badge">خصم 15%</div>
+                                        <div class="discount-badge" data-ar="خصم 15%" data-en="15% Discount">
+                                            خصم 15%
+                                        </div>
                                         <div class="final-price">176.18</div>
                                     </div>
+
                                 </div>
 
-                                <button class="btn-book">احجز الآن</button>
-                                <div class="compare-section">
+                                <button class="btn-book" data-ar="احجز الآن" data-en="Book Now">
+                                    احجز الآن
+                                </button>
+
+                                <div class="compare-section" data-ar="اضف للمقارنة" data-en="Add to Compare">
                                     <i class="fas fa-exchange-alt"></i>
                                     اضف للمقارنة
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-category="economy" data-price="121" data-available="true">
                         <div class="nova-card">
-                            <span class="badge-offer">عروض خاصة</span>
+
+                            <span class="badge-offer" data-ar="عروض خاصة" data-en="Special Offers">
+                                عروض خاصة
+                            </span>
+
                             <div class="nova-img">
                                 <img src="images/car-1.jpg" alt="car">
                             </div>
 
                             <div class="nova-content">
-                                <span class="nova-badge">صغيرة</span>
-                                <h5 class="nova-title mb-5">شفروليه ماليبو أو ما شابه</h5>
+
+                                <span class="nova-badge" data-ar="صغيرة" data-en="Small">
+                                    صغيرة
+                                </span>
+
+                                <h5 class="nova-title mb-5" data-ar="شفروليه ماليبو أو ما شابه"
+                                    data-en="Chevrolet Malibu or Similar">
+                                    شفروليه ماليبو أو ما شابه
+                                </h5>
+
                                 <div
                                     class="features d-flex justify-content-between align-items-center text-center my-3">
                                     <div>
                                         <img src="images/icon-1.png" alt="">
-                                        <p class="mt-2 text-purple">4</p>
+                                        <p class="mt-2 text-purple" data-ar="4" data-en="4">
+                                            4
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="https://demo.awaikenthemes.com/novaride/dark/wp-content/uploads/2024/09/icon-door-1.svg"
                                             alt="">
-                                        <p class="mt-2 text-purple">4</p>
+                                        <p class="mt-2 text-purple" data-ar="4" data-en="4">
+                                            4
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="images/icon-2.png" alt="">
-                                        <p class="mt-2 text-purple">2</p>
+                                        <p class="mt-2 text-purple" data-ar="2" data-en="2">
+                                            2
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="images/icon-3.png" alt="">
-                                        <p class="mt-2 text-purple">اتوماتيك</p>
+                                        <p class="mt-2 text-purple" data-ar="اتوماتيك" data-en="Automatic">
+                                            اتوماتيك
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="pricing-section">
+
                                     <div class="daily-price">
-                                        <span class="price-label">الإيجار اليومي</span>
+                                        <span class="price-label" data-ar="الإيجار اليومي" data-en="Daily Rental">
+                                            الإيجار اليومي
+                                        </span>
                                         <div class="price-amount">176.18</div>
-                                        <span class="tax-note">* يشمل الفريضة</span>
+                                        <span class="tax-note" data-ar="* يشمل الفريضة" data-en="* Includes Tax">
+                                            * يشمل الفريضة
+                                        </span>
                                     </div>
+
                                     <div class="weekly-price">
-                                        <span class="weekly-label">الإيجار اليومي</span>
+                                        <span class="weekly-label" data-ar="الإيجار اليومي" data-en="Daily Rental">
+                                            الإيجار اليومي
+                                        </span>
                                         <div class="original-price">207.27</div>
-                                        <div class="discount-badge">خصم 15%</div>
+                                        <div class="discount-badge" data-ar="خصم 15%" data-en="15% Discount">
+                                            خصم 15%
+                                        </div>
                                         <div class="final-price">176.18</div>
                                     </div>
+
                                 </div>
 
-                                <button class="btn-book">احجز الآن</button>
-                                <div class="compare-section">
+                                <button class="btn-book" data-ar="احجز الآن" data-en="Book Now">
+                                    احجز الآن
+                                </button>
+
+                                <div class="compare-section" data-ar="اضف للمقارنة" data-en="Add to Compare">
                                     <i class="fas fa-exchange-alt"></i>
                                     اضف للمقارنة
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-category="economy" data-price="121" data-available="true">
                         <div class="nova-card">
+
                             <div class="nova-img">
                                 <img src="images/car-1.jpg" alt="car">
                             </div>
-                            <div class="special-offer-badge">
+
+                            <div class="special-offer-badge" data-ar="عرض استقبال نقاط الولاء"
+                                data-en="Loyalty Points Welcome Offer">
                                 <i class="fas fa-gift"></i>
                                 عرض استقبال نقاط الولاء
                             </div>
+
                             <div class="nova-content">
-                                <span class="nova-badge">صغيرة</span>
-                                <h5 class="nova-title mb-5">شفروليه ماليبو أو ما شابه</h5>
+
+                                <span class="nova-badge" data-ar="صغيرة" data-en="Small">
+                                    صغيرة
+                                </span>
+
+                                <h5 class="nova-title mb-5" data-ar="شفروليه ماليبو أو ما شابه"
+                                    data-en="Chevrolet Malibu or Similar">
+                                    شفروليه ماليبو أو ما شابه
+                                </h5>
+
                                 <div
                                     class="features d-flex justify-content-between align-items-center text-center my-3">
                                     <div>
                                         <img src="images/icon-1.png" alt="">
-                                        <p class="mt-2 text-purple">4</p>
+                                        <p class="mt-2 text-purple" data-ar="4" data-en="4">
+                                            4
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="https://demo.awaikenthemes.com/novaride/dark/wp-content/uploads/2024/09/icon-door-1.svg"
                                             alt="">
-                                        <p class="mt-2 text-purple">4</p>
+                                        <p class="mt-2 text-purple" data-ar="4" data-en="4">
+                                            4
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="images/icon-2.png" alt="">
-                                        <p class="mt-2 text-purple">2</p>
+                                        <p class="mt-2 text-purple" data-ar="2" data-en="2">
+                                            2
+                                        </p>
                                     </div>
                                     <div>
                                         <img src="images/icon-3.png" alt="">
-                                        <p class="mt-2 text-purple">اتوماتيك</p>
+                                        <p class="mt-2 text-purple" data-ar="اتوماتيك" data-en="Automatic">
+                                            اتوماتيك
+                                        </p>
                                     </div>
                                 </div>
 
                                 <div class="pricing-section">
+
                                     <div class="daily-price">
-                                        <span class="price-label">الإيجار اليومي</span>
+                                        <span class="price-label" data-ar="الإيجار اليومي" data-en="Daily Rental">
+                                            الإيجار اليومي
+                                        </span>
                                         <div class="price-amount">176.18</div>
-                                        <span class="tax-note">* يشمل الفريضة</span>
+                                        <span class="tax-note" data-ar="* يشمل الفريضة" data-en="* Includes Tax">
+                                            * يشمل الفريضة
+                                        </span>
                                     </div>
+
                                     <div class="weekly-price">
-                                        <span class="weekly-label">الإيجار اليومي</span>
+                                        <span class="weekly-label" data-ar="الإيجار اليومي" data-en="Daily Rental">
+                                            الإيجار اليومي
+                                        </span>
                                         <div class="original-price">207.27</div>
-                                        <div class="discount-badge">خصم 15%</div>
+                                        <div class="discount-badge" data-ar="خصم 15%" data-en="15% Discount">
+                                            خصم 15%
+                                        </div>
                                         <div class="final-price">176.18</div>
                                     </div>
+
                                 </div>
 
-                                <button class="btn-book btn-unavailable" disabled>غير متوفرة</button>
-                                <div class="compare-section">
+                                <button class="btn-book btn-unavailable" disabled data-ar="غير متوفرة"
+                                    data-en="Unavailable">
+                                    غير متوفرة
+                                </button>
+
+                                <div class="compare-section" data-ar="اضف للمقارنة" data-en="Add to Compare">
                                     <i class="fas fa-exchange-alt"></i>
                                     اضف للمقارنة
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -608,35 +853,46 @@
                 <div class="row g-4 text-end">
 
                     <div class="col-md-2">
-                        <div class="footer-title">عن الشركة</div>
-                        <a href="about-us.html" class="footer-link">معلومات عنا</a>
-                        <a href="our-locations.html" class="footer-link">مواقع الفروع</a>
-                        <a href="jobs.html" class="footer-link">وظائف</a>
+                        <div class="footer-title" data-ar="عن الشركة" data-en="About Us">عن الشركة</div>
+                        <a href="about-us.html" class="footer-link" data-ar="معلومات عنا" data-en="About Us">معلومات
+                            عنا</a>
+                        <a href="our-locations.html" class="footer-link" data-ar="مواقع الفروع"
+                            data-en="Our Locations">مواقع الفروع</a>
+                        <a href="jobs.html" class="footer-link" data-ar="وظائف" data-en="Jobs">وظائف</a>
                     </div>
 
                     <div class="col-md-2">
-                        <div class="footer-title">الخدمات</div>
-                        <a href="services.html" class="footer-link">الخدمات</a>
-                        <a href="fleet.html" class="footer-link">أسطول المها</a>
-                        <a href="car-booking.html" class="footer-link">التأجير طويل الأجل</a>
-                        <a href="car-selling.html" class="footer-link">مبيعات السيارات</a>
-                        <a href="offers.html" class="footer-link">العروض</a>
-                        <a href="sign-up.html" class="footer-link">التسجيل لأول مرة</a>
+                        <div class="footer-title" data-ar="الخدمات" data-en="Services">الخدمات</div>
+                        <a href="services.html" class="footer-link" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                        <a href="fleet.html" class="footer-link" data-ar="أسطول المها" data-en="Our Fleet">أسطول
+                            المها</a>
+                        <a href="car-booking.html" class="footer-link" data-ar="التأجير طويل الأجل"
+                            data-en="Long-term Rental">التأجير طويل الأجل</a>
+                        <a href="car-selling.html" class="footer-link" data-ar="مبيعات السيارات"
+                            data-en="Car Sales">مبيعات السيارات</a>
+                        <a href="offers.html" class="footer-link" data-ar="العروض" data-en="Offers">العروض</a>
+                        <a href="sign-up.html" class="footer-link" data-ar="التسجيل لأول مرة" data-en="Sign Up">التسجيل
+                            لأول مرة</a>
                     </div>
                     <div class="col-md-2">
-                        <div class="footer-title">استأجر</div>
-                        <a href="car-booking.html" class="footer-link">يومي</a>
-                        <a href="car-booking.html" class="footer-link">اسبوعي</a>
-                        <a href="car-booking.html" class="footer-link">فليكس (التأجير الشهري)</a>
+                        <div class="footer-title" data-ar="استأجر" data-en="Rent">استأجر</div>
+                        <a href="car-booking.html" class="footer-link" data-ar="يومي" data-en="Daily">يومي</a>
+                        <a href="car-booking.html" class="footer-link" data-ar="اسبوعي" data-en="Weekly">اسبوعي</a>
+                        <a href="car-booking.html" class="footer-link" data-ar="فليكس (التأجير الشهري)"
+                            data-en="Flex (Monthly Rental)">فليكس (التأجير الشهري)</a>
                     </div>
-
                     <div class="col-md-2">
-                        <div class="footer-title">الدعم</div>
-                        <a href="contact-us.html" class="footer-link">اتصل بنا</a>
-                        <a href="faq.html" class="footer-link">الأسئلة الأكثر شيوعاً</a>
+                        <div class="footer-title" data-ar="الدعم" data-en="Support">الدعم</div>
+                        <a href="contact-us.html" class="footer-link" data-ar="اتصل بنا" data-en="Contact Us">اتصل
+                            بنا</a>
+                        <a href="faq.html" class="footer-link" data-ar="الأسئلة الأكثر شيوعاً" data-en="FAQ">الأسئلة
+                            الأكثر شيوعاً</a>
                     </div>
                     <div class="col-md-3">
-                        <div class="footer-title">تابعنا على وسائل التواصل الاجتماعي</div>
+                        <div class="footer-title" data-ar="تابعنا على وسائل التواصل الاجتماعي"
+                            data-en="Follow Us on Social Media">
+                            تابعنا على وسائل التواصل الاجتماعي
+                        </div>
 
                         <div class="social-icons mb-3">
                             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -645,7 +901,9 @@
                             <a href="#"><i class="fab fa-x-twitter"></i></a>
                         </div>
 
-                        <div class="footer-title mt-4">حمل تطبيقنا</div>
+                        <div class="footer-title mt-4" data-ar="حمل تطبيقنا" data-en="Download Our App">
+                            حمل تطبيقنا
+                        </div>
 
                         <div class="store-btn d-flex flex-wrap gap-2">
                             <img src="images/applestore.png">
@@ -659,16 +917,15 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <div class="row align-items-center p-3">
-                    <div class="col-md-6 text-end copyright">
+                <div class="row g-4 align-items-center p-3">
+                    <div class="col-lg-6 text-end copyright"
+                        data-ar="حقوق الملكية 2026. جميع الحقوق محفوظة لشركة المها لتأجير السيارات."
+                        data-en="© 2026 All rights reserved by Al Maha Car Rental.">
                         حقوق الملكية 2026. جميع الحقوق محفوظة لشركة المها لتأجير السيارات.
                     </div>
-                    <div class="col-md-6 justify-content-between payment-logos">
+                    <div class="col-lg-6 justify-content-between payment-logos">
                         <img src="images/footer-logos.png">
-
                     </div>
-
-
                 </div>
             </div>
         </div>

@@ -24,6 +24,7 @@ section {
   z-index: 1000;
   padding: 0;
 }
+
 /* Overlay */
 .sidebar-overlay {
   position: fixed;
@@ -222,6 +223,7 @@ body.sidebar-open {
     width: 280px;
   }
 }
+
 .sidebar-menu {
   right: -700px;
   transform: none;
@@ -1111,16 +1113,19 @@ input[type="number"] {
   margin: auto;
   display: block;
 }
+
 @media screen and (max-width:1200px) {
   .circle-wrapper {
- display: none;
+    display: none;
+  }
 }
-}
+
 .circle-bg {
   width: 311px;
   height: 614px;
   border-radius: 200px;
   overflow: hidden;
+  margin: auto;
 }
 
 .circle-bg img {
@@ -1137,6 +1142,9 @@ input[type="number"] {
   width: 550px;
 }
 
+html[dir="ltr"] .car-img {
+    left: 49%;
+}
 @media screen and (max-width:768px) {
   .circle-bg {
     height: 465px;
@@ -1252,8 +1260,8 @@ input[type="number"] {
 
 .badge-offer {
   position: absolute;
-  top: 15px;
-  left: -28px;
+  top: 16px;
+  left: -40px;
   background: #b42a91;
   color: #fff;
   padding: 5px 25px;
@@ -1261,6 +1269,15 @@ input[type="number"] {
   font-size: 13px;
   font-weight: 700;
   border: 1px solid #de9f18;
+}
+
+html[dir="ltr"] .badge-offer {
+  top: 25px;
+  left: -38px;
+}
+
+html[dir="ltr"] .feature-box .icon::before {
+  left: -2%;
 }
 
 .fleet-section,
@@ -1768,7 +1785,10 @@ input[type="number"] {
   justify-content: center;
   font-weight: bold;
 }
-
+html[dir="ltr"] .number{
+  top: 35px;
+  left: 350px;
+}
 .service-box ul li {
   margin-bottom: 10px;
 }
